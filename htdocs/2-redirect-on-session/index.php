@@ -3,10 +3,10 @@
 
 session_start();
 
-// $_SESSION['logged_in'] = true;
+$_SESSION['logged_in'] = true;
 
 if (isset($_SESSION['logged_in'])) {
-    header("Location: redirected.php");
+  header("Location: redirected.php");
 }
 
 ?>
@@ -15,12 +15,12 @@ if (isset($_SESSION['logged_in'])) {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Start</title>
+  <meta charset="UTF-8">
+  <title>Start</title>
 </head>
 
 <body>
-    <h1>If you see this, you didn't redirect!</h1>
+  <h1>If you see this, you didn't redirect!</h1>
 </body>
 
 </html>
